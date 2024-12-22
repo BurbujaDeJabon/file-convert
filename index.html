@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Converter</title>
+
+  <!--local styles-->
+  <link rel="stylesheet" href="./style.css">
+  <!--local script-->
+  <script src="./script.js" defer></script>
+
+</head>
+<body>
+
+  <div class="container">
+  <h1>Image Converter</h1>
+  <input type="file" id="upload" accept="image/*">
+  <select id="format">
+    <option value="image/png">PNG</option>
+    <option value="image/jpeg">JPEG</option>
+  </select>
+  <button id="convert">Convert</button>
+  <a id="download" style="display: none;">Download Converted Image</a>
+  <canvas id="canvas" style="display: none;"></canvas>
+  <img id="preview" alt="Preview" />
+</div><!--container-->
+
+</body>
+</html>
